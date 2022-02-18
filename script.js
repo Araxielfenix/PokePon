@@ -55,6 +55,7 @@ function myMove() {
     getName();
     setTimeout(function(){
     document.getElementById("Pokemon").src = Sprite;
+    document.getElementById("NombrePkmn").innerHTML = Nombre;
     }, 1700);
     setTimeout(hide, 1700);
     Animation = setInterval(function(){document.getElementById("pokemon").style.animation = "pokemon-animation 1s";}, 1500);
@@ -82,13 +83,17 @@ function hide() {
 }
 //Funcion que obtiene el nombre del pokemon y lo guarda en la variable Nombre.
 function getName() {
-    //Realiza un random entre 1 y 151.
-    let random = Math.floor(Math.random() * 151) + 1;
+    document.getElementById("NombrePkmn").innerHTML = "";
+    //Realiza un random entre 1 y 649.
+    let random = Math.floor(Math.random() * 649) + 1;
     Nombre = "https://pokeapi.co/api/v2/pokemon/" + random;
-    //Realiza una peticion a la API para obtener el nombre del pokemon y lo guarda en la variable Nombre.
+    //fetch de la url para obtener el nombre del pokemon.
     fetch(Nombre)
     .then(function(response) {
         return response.json();
+    })
+    .then(function(myJson) {
+        Nombre = myJson.name;
     })
     Sprite = "https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/" + random + ".svg";
 }
