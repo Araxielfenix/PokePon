@@ -245,6 +245,7 @@
 }
 #body h1{
    -webkit-user-select: none;
+   color: white;
 }
 #Pokemon{
     position: relative;
@@ -258,17 +259,6 @@
 }
 body{
     font-family: 'Exo', sans-serif;
-}
-.context {
-    width: 100%;
-    position: absolute;
-    top:50vh;
-    
-}
-.context h1{
-    text-align: center;
-    color: #fff;
-    font-size: 50px;
 }
 .area{
     margin: auto auto;
@@ -399,22 +389,23 @@ body{
     -webkit-user-select: none;
 }
 
-@media screen and (max-width: 460px) {
-    .context {
-        top: 30vh;
-    }
-    .area {
-        height: auto;
-    }
-    .circles {
-        height: auto;
-    }
-    .circles li {
-        width: auto;
-        height: auto;
-    }
-    body{
-        width: auto;
-        height: auto;
-    }
+/* For desktop: */
+.area-1 {width: 8.33%;}
+.area-2 {width: 16.66%;}
+.area-3 {width: 25%;}
+.area-4 {width: 33.33%;}
+.area-5 {width: 41.66%;}
+.area-6 {width: 50%;}
+.area-7 {width: 58.33%;}
+.area-8 {width: 66.66%;}
+.area-9 {width: 75%;}
+.area-10 {width: 83.33%;}
+.area-11 {width: 91.66%;}
+.area-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="area"] {
+    width: 100%;
+  }
 }
