@@ -399,18 +399,22 @@ body{
     -webkit-user-select: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 460px) {
     .context {
-        top: 50vh;
+        top: auto;
     }
     .area {
-        height: 90vmax;
+        height: auto;
     }
     .circles {
-        height: 90vmax;
+        height: auto;
     }
     .circles li {
-        width: 20px;
-        height: 20px
+        width: auto;
+        height: auto;
+    }
+    #body{
+        width: auto;
+        height: auto;
     }
 }
