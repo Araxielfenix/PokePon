@@ -1,6 +1,7 @@
 let contador;
 let Nombre;
 let Sprite;
+
 window.onload = function() {
     hide();
     for (let i = 1; i <= 17; i++) {
@@ -15,6 +16,8 @@ window.onload = function() {
     }
     getName(); 
 };
+
+
 //Al momento de pasar el mouse por encima del boton, oscurecer el color del boton.
 function oscurecer() {
     document.getElementById("container4").style.backgroundColor = "#b7b7b7";
