@@ -271,7 +271,7 @@ body{
     font-size: 50px;
 }
 .area{
-    
+    margin: auto auto;
     background: #4e54c8;  
     background: -webkit-linear-gradient(to top, #8f94fb, #4e54c8);  
     width: 100%;
