@@ -94,6 +94,8 @@ function getName() {
     })
     .then(function(myJson) {
         Nombre = myJson.name;
+        //Cambia a mayusculas el nombre del pokemon.
+        Nombre = Nombre.charAt(0).toUpperCase() + Nombre.slice(1);
     })
     Sprite = "https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/" + random + ".svg";
 }
