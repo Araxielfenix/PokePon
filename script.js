@@ -3,6 +3,7 @@ let Nombre;
 let Sprite;
 
 window.onload = function() {
+    document.body.style.zoom="90%"
     hide();
     for (let i = 1; i <= 17; i++) {
         // Get the element
@@ -40,11 +41,11 @@ function myMove() {
     document.getElementById("premio").style.display = "block";
     let id = null;
     const elem = document.getElementById("premio");   
-    let pos = 510;
+    let pos = 580;
     clearInterval(id);
     id = setInterval(frame, 5);
     function frame() {
-      if (pos == 570) {
+      if (pos == 620) {
         clearInterval(id);
       } else {
         pos++; 
@@ -56,7 +57,7 @@ function myMove() {
     //Espera 1700 segundos para que se muestre el pokemon.
     setTimeout(function(){
     document.getElementById("Pokemon").src = Sprite;
-    }, 900);
+    }, 800);
     Animation = setInterval(function(){document.getElementById("pokemon").style.animation = "pokemon-animation 1s";}, 1500);
 }
 //Funcion para refrescar la pagina al presionar el boton.
