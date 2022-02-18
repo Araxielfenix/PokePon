@@ -398,3 +398,17 @@ body{
     color: white;
     -webkit-user-select: none;
 }
+
+@media screen and (min-width: 1024px) {
+    .context {
+        top: 50vh;
+    }
+    .area {
+        height: 90vmax;
+    }
+    .circles {
+        height: 90vmax;
+    }
+    .circles li {
+        width: 20px;
+        height: 20px
