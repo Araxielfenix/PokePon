@@ -52,12 +52,11 @@ function myMove() {
         elem.style.top = pos + "px";  
       }
     }
-    getName();  
-    setTimeout(hide, 1700);
-    //Espera 1700 segundos para que se muestre el pokemon.
+    getName();
     setTimeout(function(){
     document.getElementById("Pokemon").src = Sprite;
-    }, 800);
+    }, 1700);
+    setTimeout(hide, 1700);
     Animation = setInterval(function(){document.getElementById("pokemon").style.animation = "pokemon-animation 1s";}, 1500);
 }
 //Funcion para refrescar la pagina al presionar el boton.
