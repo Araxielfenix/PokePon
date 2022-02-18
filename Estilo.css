@@ -401,7 +401,7 @@ body{
 
 @media screen and (max-width: 460px) {
     .context {
-        top: auto;
+        top: 30vh;
     }
     .area {
         height: auto;
@@ -413,7 +413,7 @@ body{
         width: auto;
         height: auto;
     }
-    #body{
+    body{
         width: auto;
         height: auto;
     }

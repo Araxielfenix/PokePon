@@ -3,7 +3,7 @@ let Nombre;
 let Sprite;
 
 window.onload = function() {
-    document.body.style.zoom="99%"
+    document.body.style.zoom="80%"
     hide();
     for (let i = 1; i <= 17; i++) {
         // Get the element
