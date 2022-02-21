@@ -1,10 +1,10 @@
 #container {
     width: 600px;
-    height: 200px;
+    height: 161px;
     position: relative;
     background: rgb(33, 116, 224);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
     margin: auto auto;
 }
 #container2 {
@@ -258,7 +258,10 @@
     padding: 0px;
 }
 body{
+    width: 69vh;
+    display: contents;
     font-family: 'Exo', sans-serif;
+    margin: auto auto;
 }
 .area{
     margin: auto auto;
@@ -370,7 +373,7 @@ body{
 #Espacio{
     position: relative;
     width: 10%;
-    height: 2%;
+    height: 4vh;
 }
 #NombrePokemon {
     width: 150px;
@@ -387,6 +390,12 @@ body{
     font-size: 20px;
     color: white;
     -webkit-user-select: none;
+}
+#botones{
+    display: flex;
+    width: 30%;
+    position: relative;
+    margin: auto auto;
 }
 
 /* For desktop: */
