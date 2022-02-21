@@ -249,7 +249,7 @@
 }
 #Pokemon{
     position: relative;
-    margin: auto 45%;
+    margin: 2% 45%;
     width: 10%;
 }
 @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
@@ -373,7 +373,7 @@ body{
 #Espacio{
     position: relative;
     width: 10%;
-    height: 4vh;
+    height: 2vh;
 }
 #NombrePokemon {
     width: 150px;
